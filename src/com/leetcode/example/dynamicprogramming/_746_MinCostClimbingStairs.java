@@ -1,4 +1,4 @@
-package com.leetcode.example.dinamicprogramming;
+package com.leetcode.example.dynamicprogramming;
 
 public class _746_MinCostClimbingStairs {
     public static void main(String[] args) {

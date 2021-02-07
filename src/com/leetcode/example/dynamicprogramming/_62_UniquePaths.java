@@ -1,4 +1,4 @@
-package com.leetcode.example.dinamicprogramming;
+package com.leetcode.example.dynamicprogramming;
 
 
 public class _62_UniquePaths {

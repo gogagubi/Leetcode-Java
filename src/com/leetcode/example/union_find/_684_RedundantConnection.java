@@ -1,32 +1,32 @@
-package com.leetcode.example.graphs;
+package com.leetcode.example.union_find;
 
 
 import java.util.Arrays;
 
 public class _684_RedundantConnection {
     public static void main(String[] args) {
-        if (false) {
+        if (true) {
             _684_RedundantConnection s = new _684_RedundantConnection();
             int[][] edges = {{1, 2}, {1, 3}, {2, 3}};
 
             System.out.println("Result " + Arrays.toString(s.findRedundantConnection(edges)));
         }
 
-        if (true) {
+        if (false) {
             _684_RedundantConnection s = new _684_RedundantConnection();
             int[][] edges = {{1, 2}, {2, 3}, {3, 4}, {1, 4}, {1, 5}};
 
             System.out.println("Result " + Arrays.toString(s.findRedundantConnection(edges)));
         }
 
-        if (true) {
+        if (false) {
             _684_RedundantConnection s = new _684_RedundantConnection();
             int[][] edges = {{1, 3}, {3, 4}, {1, 5}, {3, 5}, {2, 3}}; //Expected : [3,5]
 
             System.out.println("Result " + Arrays.toString(s.findRedundantConnection(edges)));
         }
 
-        if (true) {
+        if (false) {
             _684_RedundantConnection s = new _684_RedundantConnection();
             int[][] edges = {{1, 4}, {3, 4}, {1, 3}, {1, 2}, {4, 5}}; //Expected : [1,3]
 
@@ -38,16 +38,16 @@ public class _684_RedundantConnection {
         int n = edges.length;
         int[] res = new int[2];
 
-        int[] parent = new int[n + 1];
-        for (int i = 0; i < parent.length; i++) parent[i] = i;
+        int[] arr = new int[n + 1];
+        for (int i = 0; i < arr.length; i++) arr[i] = i;
 
         for (int[] edge : edges) {
-            int u = find(parent, edge[0]), v = find(parent, edge[1]);
+            int u = find(arr, edge[0]), v = find(arr, edge[1]);
 
             if (u == v) {
                 res = edge;
             } else {
-                parent[v] = u;
+                arr[v] = u;
             }
         }
 

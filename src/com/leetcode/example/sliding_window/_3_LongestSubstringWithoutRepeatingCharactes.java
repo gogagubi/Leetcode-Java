@@ -1,4 +1,4 @@
-package com.leetcode.example.string;
+package com.leetcode.example.sliding_window;
 
 
 import java.util.HashSet;

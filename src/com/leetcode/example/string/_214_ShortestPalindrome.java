@@ -54,6 +54,7 @@ public class _214_ShortestPalindrome {
         }
     }
 
+    //This is non standard my-solution
     public String shortestPalindrome(String s) {
         if (s.length() == 0) {
             return s;

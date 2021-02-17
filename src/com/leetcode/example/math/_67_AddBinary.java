@@ -1,4 +1,4 @@
-package com.leetcode.example.string;
+package com.leetcode.example.math;
 
 public class _67_AddBinary {
     public static void main(String[] args) {

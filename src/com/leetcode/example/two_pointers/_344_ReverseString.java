@@ -1,4 +1,4 @@
-package com.leetcode.example.string;
+package com.leetcode.example.two_pointers;
 
 
 public class _344_ReverseString {

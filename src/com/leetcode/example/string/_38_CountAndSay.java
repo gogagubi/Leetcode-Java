@@ -1,8 +1,6 @@
 package com.leetcode.example.string;
 
 
-import java.util.HashSet;
-
 public class _38_CountAndSay {
     public static void main(String[] args) {
         if (true) {

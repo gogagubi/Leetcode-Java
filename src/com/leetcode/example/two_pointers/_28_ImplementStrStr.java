@@ -1,4 +1,4 @@
-package com.leetcode.example.string;
+package com.leetcode.example.two_pointers;
 
 
 public class _28_ImplementStrStr {
@@ -56,6 +56,14 @@ public class _28_ImplementStrStr {
 
             String haystack = "a";
             String needle = "a";
+            System.out.println("First occurence = " + c.strStr(haystack, needle));
+        }
+
+        if (true) {
+            _28_ImplementStrStr c = new _28_ImplementStrStr();
+
+            String haystack = "";
+            String needle = "";
             System.out.println("First occurence = " + c.strStr(haystack, needle));
         }
     }

@@ -1,4 +1,4 @@
-package com.leetcode.example.string;
+package com.leetcode.example.two_pointers;
 
 public class _125_ValidPalindrome {
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class _125_ValidPalindrome {
         if (true) {
             _125_ValidPalindrome c = new _125_ValidPalindrome();
 
-            String s = "OP";
+            String s = "0P";
             System.out.println("Valid palindrome " + c.isPalindrome(s));
         }
 
